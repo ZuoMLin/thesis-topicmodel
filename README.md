@@ -1,6 +1,6 @@
 ## 论文相关主题模型实现
 #### 主题模型
-LDA模型(LatentDirichletDistribution)  
+LDA模型(LatentDirichletAllocation)  
 BTM模型(BitermTopicModel，参考：宴小辉)  
 BTOT模型(BitermTopicsOverTime)
 #### 在线主题模型

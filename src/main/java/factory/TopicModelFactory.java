@@ -17,7 +17,7 @@ public class TopicModelFactory {
             return null;
         switch (modelType) {
             case "LDA":
-                return new LatentDirichletDistribution((String) paras.get("trainPath"),
+                return new LatentDirichletAllocation((String) paras.get("trainPath"),
                         (int) paras.get("W"), (int) paras.get("K"),
                         (double) paras.get("alpha"), (double) paras.get("beta"), (int) paras.get("iterations"));
             case "BTM":

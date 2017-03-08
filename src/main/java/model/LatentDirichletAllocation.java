@@ -4,9 +4,9 @@ import util.DoubleArrayInit;
 import util.Pretreatment;
 
 /**
- * LDA模型
+ * Created by ZuoMLin on 17/3/8.
  */
-public class LatentDirichletDistribution extends TermForm {
+public class LatentDirichletAllocation extends TermForm {
 
     // 文本集合
     private int[][] documents;
@@ -61,7 +61,7 @@ public class LatentDirichletDistribution extends TermForm {
         return betaksum;
     }
 
-    public LatentDirichletDistribution(String trainPath, int W, int K,
+    public LatentDirichletAllocation(String trainPath, int W, int K,
                                        double alphaVal, double betaVal, int iterations) {
         documents = Pretreatment.readDocs(trainPath);
         M = documents.length;
@@ -74,7 +74,7 @@ public class LatentDirichletDistribution extends TermForm {
         ITERATIONS = iterations;
     }
 
-    public LatentDirichletDistribution(String trainPath, int W, int K,
+    public LatentDirichletAllocation(String trainPath, int W, int K,
                                        double[][] alpha, double[][] beta, int iterations) {
         documents = Pretreatment.readDocs(trainPath);
         M = documents.length;

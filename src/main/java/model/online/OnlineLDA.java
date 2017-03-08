@@ -1,6 +1,6 @@
 package model.online;
 
-import model.LatentDirichletDistribution;
+import model.LatentDirichletAllocation;
 import util.DoubleArrayInit;
 import util.Posttreatment;
 
@@ -80,7 +80,7 @@ public class OnlineLDA implements OnlineTopicModel {
             // 重新计算alpha, beta
             genetic();
 
-            LatentDirichletDistribution lda = new LatentDirichletDistribution(
+            LatentDirichletAllocation lda = new LatentDirichletAllocation(
                     String.format("%s%d.txt", docsDir, i), W, K, alpha, beta, iterations);
             lda.gibbs();
 
